@@ -1,0 +1,24 @@
+.formHolder {
+    width: 80%;
+    background-color: #0F3460;
+    border-radius: 23px;
+    color: aliceblue;
+    margin: 30px auto 0 auto;
+    /* height: 400px; */
+    padding: 30px;
+}
+
+.formTitle {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.submitBtn {
+    text-align: left;
+    margin: 20px auto 0 auto;
+}
+
+.submitBtn button {
+    width: 50%;
+}

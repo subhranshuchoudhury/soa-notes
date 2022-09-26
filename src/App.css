@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-color: #064663;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+    background-attachment: fixed;
+    font-family: 'Ubuntu', 'sans-serif';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.notePageHolder {
+    color: white;
+    display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pageTitle {
+    text-align: center;
+    font-size: 20px;
+    background-color: #0F3460;
+    display: table;
+    border-radius: 23px;
+    padding: 10px;
+    font-family: 'Bungee Spice', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.welcomeUser {
+    text-align: center;
+    line-height: 30px;
+    display: table;
+    margin: auto;
+    margin: 50px auto 60px;
+    border-radius: 23px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.App-link {
-  color: #61dafb;
+.welcomeUser b {
+    color: white;
+    padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.noteCard {
+    width: 200px;
+    padding-bottom: 20px;
+    background-color: #8CC0DE;
+    border-right: 5px double white;
+    border-radius: 23px;
+    padding-top: 10px;
+    margin: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+.aboutNote {
+    margin: 20px auto 5px auto;
+    height: 100px;
+    width: 180px;
+    /* background-color: #F4BFBF; */
+    border-radius: 23px;
+}
+
+.aboutNote ul {
+    background-color: #F4BFBF;
+    border-radius: 23px;
+    overflow-y: scroll;
+    color: #354259;
+    height: 100px;
+}
+
+.aboutNote ul li {
+    margin-bottom: 4px;
+}
+
+.subjectIAbout {
+    background-color: #E94560;
+    color: white;
+    padding: 8px;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+
+/* .dateIAbout,
+.aboutOText {
+    margin-top: 5px;
+    color: #E94560;
+    background-color: #0F3460;
+} */
+
+.downloadNoteBtn {
+    margin: 20px auto 10px auto;
+    text-align: center;
+}
+
+.downloadNoteBtn a {
+    background-color: #FF5D5D;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 23px;
+}
+
+.downloadNoteBtn button:hover {
+    background-color: #E94560;
+    color: black;
+}
+
+.sectionButtonContainer {
+    text-align: center;
+}
+
+.sectionButtonContainer button {
+    margin: 10px;
+    background-color: #FF5D5D;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 23px;
+}
+
+.searchBox {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.searchBox input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 3px solid #E94560;
+    width: 60%;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: #064663;
+}
+
+/* custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #16213E;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #E94560;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #E94560;
+}
+
+/* marquee effect */
+
+.marquee {
+    width: 80%;
+    line-height: 30px;
+    margin: 0 auto 0 auto;
+    background-color: #064663;
+    color: white;
+    white-space: nowrap;
+    border-radius: 23px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee b {
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
 }
