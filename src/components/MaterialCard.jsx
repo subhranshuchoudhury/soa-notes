@@ -39,7 +39,8 @@ const MaterialCard = (props) => {
 
         new JsFileDownloader({
             url: fileUrl,
-            process: process
+            process: process,
+            forceDesktopMode: true
         })
             .then(function () {
                 // Called when download ended
