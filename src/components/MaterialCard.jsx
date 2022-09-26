@@ -108,9 +108,9 @@ const MaterialCard = (props) => {
                                 <div className='marquee'>
                                     <b>{material.name}</b>
                                 </div>
-                                <div className='aboutNote'>
+                                <div className='aboutNote listRight'>
                                     <ol start={-1}>
-                                        <li className='removeListStyle'><b className='subjectIAbout'>{material.subject}</b></li>
+                                        <li className='removeListStyle listRight'><b className='subjectIAbout'>{material.subject}</b></li>
                                         <li className='removeListStyle'><b className='dateIAbout'>{material.date}</b></li>
                                         {
                                             material.about.map((data, i) => {

@@ -79,6 +79,10 @@ body {
     list-style: none;
 }
 
+.listRight {
+    text-align: left;
+}
+
 .subjectIAbout {
     background-color: #E94560;
     color: white;
